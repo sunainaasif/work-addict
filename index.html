@@ -33,7 +33,7 @@
                </div>            
            <ul class="list">
               <li><a href="#" >Home</a> </li>
-              <li><a href="#download-section">Download</a></li>
+              <li><a href="#services-section">Download</a></li>
               <li><a href="#about-section">About</a></li>
               <li><a href="#features-section">Features</a></li>
               <li><a href="#registration-section" class="default-btn">Registration</a></li>
@@ -53,25 +53,30 @@
          <section class="main" id="main-section">
             <div class="row">
                <div class="col-md-6">
-                  <div class="main-headings">
+                  <div class="main-headings"  data-aos="fade-right" data-aos-duration="1000">
                      <h3>Pre Business REGISTRATION</h3>
                      <h1>We are going to launch <br> things that <b>helps</b> to improve…</h1>
                     
                      <form>
                         <div class="form-row">
-                           <div class="col-md-10">
+                           <div class="col-md-5" data-aos="fade-up-right" data-aos-duration="1000">
+                              <div class="input-group mb-3 default-in-grp">
+                                 <input type="text" class="form-control default-input" placeholder="Full Name">  
+                              </div>
+                           </div>
+                           <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
                               <div class="input-group mb-3 default-in-grp">
                                  <input type="text" class="form-control default-input" placeholder="Your email address">  
                               </div>
                            </div>
-                           <div class="col-md-4">
-                              <div class="input-group mb-3 default-in-grp">
+                           <div class="col-md-5">
+                              <div class="input-group mb-3 default-in-grp" data-aos="fade-up-right" data-aos-duration="2000">
                                  <input type="text" class="form-control default-input" placeholder="Business Name">  
                               </div>
                            </div>
-                           <div class="col-md-6">
-                              <div class="input-group mb-3 default-in-grp">
-                                 <input type="text" class="form-control default-input" placeholder="Category">
+                           <div class="col-md-5">
+                              <div class="input-group mb-3 default-in-grp" data-aos="fade-up-left" data-aos-duration="2000">
+                                 <input type="text" class="form-control default-input" placeholder="Location">
                                  <div class="input-group-append">
                                  <button class="send-btn" type="submit">Send <i class="fas fa-paper-plane"></i> </button>  
                                  </div>
@@ -83,42 +88,42 @@
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="main-image">
+                  <div class="main-image"  data-aos="fade-left" data-aos-duration="1000">
                      <img src="./assets/images/main-phone.png" alt="">
                   </div>
                </div>
             </div>
          </section>
       </div>
-      <section class="sec-padding1" style="background-image: url('./assets/images/section2.png');">
+
+      <section class="back sec-padding1" style="background-image: url('./assets/images/section2.png');" id="services-section">
          <div class="services">
             <div class="mlr">
                <div class="row">
                   <div class="col-md-6">
-                     <div class="main-image">
+                     <div class="service-image" data-aos="fade-up-right" data-aos-duration="1000">
                         <img src="./assets/images/main-phone.png" alt="">
                      </div>
                   </div>
                   <div class="col-md-6">
-                     <div class="sec-headings">
-                        <h2>We provide various kind of service for you</h2>
+                     <div class="sec-headings" data-aos="fade-left">
+                        <h2>Connect to your local clients</h2>
                         <p>
-                           In publishing and graphic design, Lorem ipsum is a 
-                           placeholder text commonly used to demonstrate the 
-                           visual form of a document or a typeface without relying 
-                           on meaningful content.O gerenciamento.
+                           Work Addict enables you to connect to your clients directly. You can showcase your work through photos and videos, making it effortless for users to learn about your services and connect with you instantly.
                         </p>
+                        <br><br>
+                        <p>Receive a request to be connected and discuss further details in your very own private chat.</p>
                         <div class="buttons">
                            <a href="#">
-                              <div class="download-btn google"> 
-                                 <div>  <i class="fab fa-apple fa-2x"></i></div>
+                              <div class="download-btn google apple"> 
+                                 <div>  <i class="fab fa-apple"></i></div>
                                  <div> <span>Download<br> <span> Appstore</span></span></div>
                              </div>
                            </a>
                            <a href="#">
                               <div class="download-btn google"> 
                                  <div>  <img src="./assets/images/googleplay_icon.png" alt=""></div>
-                                 <div> <span>Download<br> <span> Appstore</span></span></div>
+                                 <div> <span>Download<br> <span> Playstore</span></span></div>
                              </div>
                            </a>
                         </div>
@@ -128,18 +133,160 @@
             </div>
          </div>
       </section>
+      <section class="video sec-padding1" id="about-section">
+         <div class="container">
+            <div class="sec-headings" data-aos="fade-right"> 
+               <span>Testimonials</span>
+               <h2 class="mt-0">Check what people say <br> About us!</h2>
+            </div>
+         </div>
+         <div class="mr-4 video-wrap"  data-aos="flip-left">
+            <img src="./assets/images/layer.png" alt="">
+            <a href="#">
+               <div class="video-layer">
+                  <div class="video-controls">
+                     <span class="video-play" data-aos="zoom-in-up"><i class="fas fa-play"></i></span>
+                     <h6 data-aos="fade-left">Watch <span>Intro Video</span></h6>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div class="testimonials-slider-wrap">
+            <div class="video-side">
+               <div class="testimonials-slider">
+                  <div>
+                  <div class="slider-div">
+                     <img src="./assets/images/marks.svg" alt="">
+                     <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. In consequat commodo <br>lorem sed sodales. Etiam condimentum,<br> dui quis suscipit tincidunt, lectus arcu <br> viverra neque, eu eleifend.</p>
+                     <div class="profile">
+                        <img src="./assets/images/picture.png" alt="">
+                        <p class="name">Katie Pavardenis<span class="role">CEO OF ENVA</span></p>
+                     </div>
+                  </div>
+                  </div>
+                  <div>
+                  <div class="slider-div">
+                     <img src="./assets/images/marks.svg" alt="">
+                     <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. In consequat commodo <br>lorem sed sodales. Etiam condimentum,<br> dui quis suscipit tincidunt, lectus arcu <br> viverra neque, eu eleifend.</p>
+                     <div class="profile">
+                        <img src="./assets/images/picture.png" alt="">
+                        <p class="name">Katie Pavardenis<span class="role">CEO OF ENVA</span></p>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="share-btns" data-aos="fade-up">
+               <div class="share"> 
+                  <h6>Share</h6>
+               </div>
+               <div class="share-icons"> 
+                  <a href="#"><i class="fab fa-facebook-f fa-7x"></i> </a>
+                  <a href="#"><i class="fab fa-twitter fa-7x"></i> </a>
+                  <a href="#"><i class="fab fa-linkedin-in fa-7x"></i> </a>
+               </div>  
+            </div>
+         </div>
+            
+            
+      </section>
+      <!--  -->
+      <section class="screens sec-padding1 back" id="features-section" style="background-image: url('./assets/images/Section3.png');">
+         <div class="sec-headings text-center"  data-aos="fade-up" data-aos-duration="1000">
+            <span>Visit Our Apps</span>
+            <h2 class="mt-0">Apps Screenshoot</h2>
+         </div>
+         <div class="screens-wrap" data-aos="fade-left"  data-aos-duration="1000">
+            <img src="./assets/images/screens.png"/>
+            
+         </div>
+      </section>
+      <section class="sec-padding1 sec-btm-padding">
+         <div class="container">
+            <div class="sec-headings text-center">
+               <span data-aos="fade-left" data-aos-duration="1000">Pre Business Registration</span>
+               <h2 data-aos="fade-right" data-aos-duration="1000" class="mt-0">We are going to launch <br> things that <b>helps</b> to improve…</h2>
+            </div>
+            <div class="mlr-14">
+               <form>
+                  <div class="form-row">
+                     <div class="col-md-6" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="input-group mb-3 default-in-grp">
+                           <input type="text" class="form-control default-input" placeholder="Full Name">  
+                        </div>
+                     </div>
+                     <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="input-group mb-3 default-in-grp">
+                           <input type="text" class="form-control default-input" placeholder="Your email address">  
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="input-group mb-3 default-in-grp" data-aos="fade-up-right" data-aos-duration="2000">
+                           <input type="text" class="form-control default-input" placeholder="Business Name">  
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="input-group mb-3 default-in-grp" data-aos="fade-up-left" data-aos-duration="2000">
+                           <input type="text" class="form-control default-input" placeholder="Location">
+                           <div class="input-group-append">
+                           <button class="send-btn" type="submit">Send <i class="fas fa-paper-plane"></i> </button>  
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
 
 
-<footer class="sec-padding1" style="background-image:url('./assets/images/footer.png');" id="footer-section"> 
-  
-</footer>
+      <footer class="sec-padding1"> 
+         <div class="container">
+            <div class="sec-headings text-center">
+               <h2 class="mt-0" data-aos="fade-right">Subscribe Our Newslatter!</h2>
+               <p data-aos="fade-left">Subscribe to our newsleter to receive updates from us.</p>
+            </div>
+            <div class="mlr-14">
+               <form>
+                  <div class="form-row" data-aos="zoom-out-up">
+                     <div class="col-md-12">
+                        <div class="input-group mb-3 default-in-grp">
+                           <input type="text" class="form-control default-input" placeholder="Enter Your Email">
+                           <div class="input-group-append">
+                           <button class="send-btn subscribe" type="submit">Subscribe </button>  
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="btm-footer">
+               <div>
+                  <img src="./assets/images/white.png" alt="">
+                  <p>All Right Reserved 2020 <span>@Work Addict</span></p>
+               </div>
+               <div>
+                  <ul class="footer-ul">
+                     <li><a href="#">Top </a></li>
+                     <li><a href="#"> Privacy Policy </a></li>
+                     <li><a href="#">Terms & Conditions </a></li>
+                     <li><a href="#">Download</a></li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+      
+      </footer>
 
  
 
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-        duration: 400,
+        duration: 1000,
         easing: 'ease',
         // delay: 30,
     });

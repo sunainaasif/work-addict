@@ -11,8 +11,8 @@ $(document).ready(function () {
     });
     $(".testimonials-slider").slick({
       arrows: true,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 3000,
     });
     $(".slick-next").addClass('selected')
     $(".slick-prev , .slick-next").click(function() {
@@ -24,13 +24,15 @@ $(document).ready(function () {
   $(document).ready( function() {
           
     $(".header_container").css('background','transparent'); //hide your div initially
-    var topOfOthDiv = $("#special-section").offset().top;
+    var topOfOthDiv = $("#services-section").offset().top;
     $(window).scroll(function() {
         if($(window).scrollTop() > topOfOthDiv - 200) { //scrolled past the other div?
-            $(".header_container").css('background','linear-gradient(rgb(233 214 135), #b4913f)'); //reached the desired point -- show div
+            $(".header_container").css('background','linear-gradient(#B5D6E0, #A4CCD8)'); //reached the desired point -- show div
             $(".header_container").css('position','fixed');
             $(".header_container").css('width','100%');
             $(".header_container").css('height:','100px');
+            // $(".header-inner").css('padding-top:','0rem');
+            
             // $(".lines div").css('background','#c5a552');
             if(!$('.header').hasClass('header-mbl'))
             $(".lines div").css('background','#c5a552');
@@ -66,3 +68,8 @@ $(document).ready(function () {
   }
   // --------------------//
   
+  // $(document).ready(function () {
+  // $(".").click(function() {
+  //   $(this).addClass('active').siblings().removeClass('active');
+  //   });
+  // });
