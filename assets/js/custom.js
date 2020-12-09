@@ -5,7 +5,7 @@ $(document).ready(function () {
     if ($(".header").hasClass("header-mbl")) {
       $(".lines div").css("background", "#fff");
     } else {
-      $(".lines div").css("background", "#c5a552");
+      $(".lines div").css("background", "#b5d6e0");
     }
     // $("body").toggleClass("fixed-position");
   });
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
       // $(".lines div").css('background','#c5a552');
       if (!$(".header").hasClass("header-mbl"))
-        $(".lines div").css("background", "#c5a552");
+        $(".lines div").css("background", "#b5d6e0"); // color of lines // 
     } else {
       $(".header_container").css("background", "transparent"); //hide your div initially
       $(".header_container").css("position", "static");
