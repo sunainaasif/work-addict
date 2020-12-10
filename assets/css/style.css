@@ -44,14 +44,14 @@ body {
   /* Microsoft Edge */
   color: #9c9ca8 !important;
 }
-
+button:focus{outline:none}
 /* ---------SLICK --------*/
-/* .slick-prev,
+.slick-prev,
 .slick-next {
-  width: 5rem;
-  font-size: 4rem;
+
   opacity: 0.3;
 }
+/* 
 .slick-prev:before,
 .slick-next:before {
   color: #d8be6d !important;
@@ -70,7 +70,7 @@ body {
 }
 button.slick-arrow {
   bottom: 3rem;
-  left: 42px;
+  left: 50px;
 }
 .slick-prev {
   left: 2.1rem !important;
@@ -90,11 +90,11 @@ button.slick-arrow {
     height: 100vh;
     z-index: 1;
   } */
-.header {
-  margin: 0 auto;
-  width: 80%;
-  height: 9.5rem;
-  padding-top: 0.1rem;
+  .header {
+    margin: 0 auto;
+    width: 80%;
+    height: 8.5rem;
+    padding-top: 0rem;
 }
 .header_container {
   background: linear-gradient(to bottom, #e9d888, #e3cf7e);
@@ -106,12 +106,12 @@ button.slick-arrow {
 .logo-img-div2 {
   margin-top: 2rem;
   height: 7rem;
-  padding-bottom: 1rem;
+  padding: 0rem 0 2.3rem;
 }
 .header-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   /* padding-top: 4rem; */
 }
 .header__logo {
@@ -147,8 +147,8 @@ ul.list li a:hover {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 40px;
-  right: 50px;
+  bottom: 4.5rem;
+  right: 5rem;
   z-index: 99;
   border: none;
   outline: none;
@@ -186,6 +186,7 @@ ul.list li a:hover {
 }
 .privacy-main {
   padding-top: 7rem;
+  /* height:90vh */
 }
 .privacy-main h2 {
   color: #323c5a;
@@ -202,6 +203,12 @@ ul.list li a:hover {
 }
 .prv footer.sec-padding1 {
   padding-top: 10rem;
+}
+.prv footer {
+  background: #fcfcfe;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 /* ---------- */
 .main {
@@ -275,6 +282,7 @@ ul.list li a:hover {
   border-radius: 3rem;
   padding: 0.9rem 2.4rem;
   margin: 0.6rem 0.6rem;
+  float:right;
 }
 button.send-btn i {
   margin-left: 3rem;
@@ -299,7 +307,7 @@ button.send-btn i {
 }
 .video-wrap {
   position: relative;
-  width: 80%;
+  width: 70%;
   cursor: pointer;
 }
 .video-wrap img {
@@ -425,18 +433,23 @@ button.send-btn i {
 .testimonials-slider-wrap {
   position: absolute;
   right: 1.4rem;
-  top: 19rem;
+  top: 13rem;
   width: 62rem;
 }
 .slider-div {
-  background: transparent linear-gradient(315deg, #b5d6e0 0%, #a4ccd8 100%) 0%
-    0% no-repeat padding-box;
-  padding: 7rem 2.7rem 7.5rem;
+  background: transparent linear-gradient(315deg, #b5d6e0 0%, #a4ccd8 100%) 0% 0% no-repeat padding-box;
+  padding: 2rem 3rem 7.5rem;
   height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .slider-div h3 {
   font-size: 10.5rem;
 }
+.marks{height:10rem}
+.marks img{height:100%}
+
 .slider-div p {
   font-size: 2.2rem;
   color: #ffff;
@@ -483,14 +496,14 @@ button.send-btn i {
 }
 
 .profile p {
-  font-size: 1.8rem;
-  line-height: 2.1rem;
+  font-size: 2rem;
+  line-height: 2.9rem;
   margin-left: 2.2rem;
 }
 
 .profile p span {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 .screens-wrap {
   /* position: relative; */
@@ -568,8 +581,8 @@ p.mainPara {
   line-height: 3.6rem;
 }
 .footer-logo {
-  height: 5rem;
-  margin-bottom: 3rem;
+  height: 8rem;
+  text-align: center;
 }
 .footer-uls h6 {
   font-size: 2.4rem;
@@ -591,13 +604,27 @@ p.mainPara {
 .footer-logo img {
   height: 100%;
 }
-.footer-btns .buttons .download-btn {
-  margin: 1em 0;
-}
 .footer-btns .buttons {
-  flex-direction: column;
+  margin: 6rem 0;
 }
-
+.footer-btns .buttons .download-btn {
+margin:0rem 4rem;
+}
+.footer-btns {
+  display: flex;
+  justify-content: center;
+}
+.avatar {
+  vertical-align: middle;
+  width: 9rem;
+  height: 9rem;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 @media only screen and (max-width: 1500px) {
   html {
     font-size: 52.5%;
@@ -614,7 +641,7 @@ p.mainPara {
     margin: 0 9% 0 9%;
   }
   .screens-wrap {
-    width: 75%;
+    width: 68%;
   }
   .back2 {
     height: 100rem;
@@ -660,8 +687,11 @@ p.mainPara {
     left: 9rem;
   }
   .back2 {
-    height: 85rem;
+    height: 77rem;
   }
+  .header {
+    width: 82%;
+}
 }
 @media only screen and (max-width: 831px) {
   br {
@@ -681,12 +711,13 @@ p.mainPara {
     margin-left: 1rem;
   }
   .send-btn1 {
-    font-size: 1.3rem;
-    padding: 0.9rem 0.9rem;
-    margin: 0rem 0rem 0 0.2rem;
+  float:left;
   }
   .main-image {
     height: 63rem;
+  }
+  .back2 {
+    height: 68rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -694,7 +725,7 @@ p.mainPara {
     font-size: 42.5%;
   }
   .back2 {
-    height: 80rem;
+    height: 77rem;
   }
   .slider-div {
     padding: 1rem 2.7rem 7.5rem;
@@ -708,7 +739,7 @@ p.mainPara {
   }
   .testimonials-slider-wrap {
     position: absolute;
-    right: 0.7rem;
+    right: 0.2rem;
   }
   .main-image {
     /* height: 60rem; */
@@ -717,9 +748,9 @@ p.mainPara {
   .main-headings {
     padding-top: 10rem;
   }
-  .send-btn {
-    padding: 0.9rem 1.2rem;
-    margin: 0rem 0rem 0 0.2rem;
+  
+  .send-btn, .send-btn1 {
+   float:none;
   }
   .background {
     height: 74rem;
@@ -738,6 +769,12 @@ p.mainPara {
   .footer-ul li {
     margin-left: 0.9rem;
   }
+  .footer-uls {
+    text-align: center;
+}
+.footer-uls h6 {
+    padding: 6rem 0rem 1rem;
+}
 }
 @media only screen and (max-width: 686px) {
   .header {
@@ -892,7 +929,7 @@ p.mainPara {
     margin-left: 0;
   }
   .main-headings {
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
   .send-btn {
     padding: 0.9rem 2.4rem;
@@ -916,9 +953,21 @@ p.mainPara {
 }
 
 @media only screen and (max-width: 480px) {
-  .slider-div img {
-    height: 13rem;
+  .marks{
+    height: 8rem;
   }
+  .footer-btns .buttons {
+    flex-direction: column;
+    align-items: center;
+}
+.footer-btns .buttons .download-btn{margin-bottom:2rem  }
+.back {
+  background-position: right;
+}
+}
+@media only screen and (max-width: 360px) {
+  .slider-div {height: 60rem;}
+  .share-btns {height: 60rem;}
 }
 @media only screen and (max-width: 320px) {
   html {
@@ -931,10 +980,27 @@ p.mainPara {
     display: none !important;
   }
 }
-@media screen and (max-width: 1180px) and (min-width: 832px) {
-  .send-btn1 {
-    font-size: 1.3rem;
-    padding: 0.9rem 0.9rem;
-    margin: 0.2rem 0.1rem 0.8px 0.2rem;
-  }
+@media only screen and (max-width: 308px) {
+  .profile{margin-top:2rem;}
+
+
+
+button.slick-arrow {left:27rem !important;}
+button.slick-prev.slick-arrow{left:22rem !important;}
+}
+@media only screen and (max-width: 384px) {
+  .mbl-logo img:nth-child(1) {
+    display: none;
+}
+.mbl-logo img:nth-child(2) {
+  display: block !important;
+}
+}
+@media screen and (max-width: 576px) and (min-width: 480px) {
+  #services-section {
+    height: auto;
+}
+.back {
+  background-position: right;
+}
 }
