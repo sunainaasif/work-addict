@@ -44,11 +44,12 @@ body {
   /* Microsoft Edge */
   color: #9c9ca8 !important;
 }
-button:focus{outline:none}
+button:focus {
+  outline: none;
+}
 /* ---------SLICK --------*/
 .slick-prev,
 .slick-next {
-
   opacity: 0.3;
 }
 /* 
@@ -90,11 +91,11 @@ button.slick-arrow {
     height: 100vh;
     z-index: 1;
   } */
-  .header {
-    margin: 0 auto;
-    width: 80%;
-    height: 8.5rem;
-    padding-top: 0rem;
+.header {
+  margin: 0 auto;
+  width: 80%;
+  height: 8.5rem;
+  padding-top: 0rem;
 }
 .header_container {
   background: linear-gradient(to bottom, #e9d888, #e3cf7e);
@@ -282,7 +283,7 @@ ul.list li a:hover {
   border-radius: 3rem;
   padding: 0.9rem 2.4rem;
   margin: 0.6rem 0.6rem;
-  float:right;
+  float: right;
 }
 button.send-btn i {
   margin-left: 3rem;
@@ -437,7 +438,8 @@ button.send-btn i {
   width: 62rem;
 }
 .slider-div {
-  background: transparent linear-gradient(315deg, #b5d6e0 0%, #a4ccd8 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(315deg, #b5d6e0 0%, #a4ccd8 100%) 0%
+    0% no-repeat padding-box;
   padding: 2rem 3rem 7.5rem;
   height: 60rem;
   display: flex;
@@ -447,8 +449,12 @@ button.send-btn i {
 .slider-div h3 {
   font-size: 10.5rem;
 }
-.marks{height:10rem}
-.marks img{height:100%}
+.marks {
+  height: 10rem;
+}
+.marks img {
+  height: 100%;
+}
 
 .slider-div p {
   font-size: 2.2rem;
@@ -595,7 +601,7 @@ p.mainPara {
   font-size: 1.8rem;
 }
 .social-icons a {
-  padding-right: 10px;
+  padding: 0 12px 0;
 }
 .contact span {
   display: block;
@@ -608,7 +614,7 @@ p.mainPara {
   margin: 6rem 0;
 }
 .footer-btns .buttons .download-btn {
-margin:0rem 4rem;
+  margin: 0rem 4rem;
 }
 .footer-btns {
   display: flex;
@@ -625,6 +631,13 @@ margin:0rem 4rem;
   object-fit: cover;
   border-radius: 50%;
 }
+.fa-instagram {
+  color: #c13584 !important;
+}
+.social-icons {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1500px) {
   html {
     font-size: 52.5%;
@@ -691,7 +704,7 @@ margin:0rem 4rem;
   }
   .header {
     width: 82%;
-}
+  }
 }
 @media only screen and (max-width: 831px) {
   br {
@@ -711,7 +724,7 @@ margin:0rem 4rem;
     margin-left: 1rem;
   }
   .send-btn1 {
-  float:left;
+    float: left;
   }
   .main-image {
     height: 63rem;
@@ -748,12 +761,16 @@ margin:0rem 4rem;
   .main-headings {
     padding-top: 10rem;
   }
-  
-  .send-btn, .send-btn1 {
-   float:none;
+
+  .send-btn,
+  .send-btn1 {
+    float: none;
   }
   .background {
     height: 74rem;
+  }
+  .background.privacy {
+    height: auto;
   }
   .sec-headings h2 {
     font-size: 4.3rem;
@@ -771,10 +788,22 @@ margin:0rem 4rem;
   }
   .footer-uls {
     text-align: center;
-}
-.footer-uls h6 {
+  }
+  .footer-uls h6 {
     padding: 6rem 0rem 1rem;
-}
+  }
+  .social-icons {
+    display: flex;
+  }
+  .btm-footer {
+    text-align: center;
+  }
+  .social-icons a {
+    margin: 0 1rem 0rem;
+  }
+  .send-btn {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 686px) {
   .header {
@@ -950,24 +979,33 @@ margin:0rem 4rem;
   .video .sec-headings br:nth-child(2) {
     display: none;
   }
+  section#registration-section {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .marks{
+  .marks {
     height: 8rem;
   }
   .footer-btns .buttons {
     flex-direction: column;
     align-items: center;
-}
-.footer-btns .buttons .download-btn{margin-bottom:2rem  }
-.back {
-  background-position: right;
-}
+  }
+  .footer-btns .buttons .download-btn {
+    margin-bottom: 2rem;
+  }
+  .back {
+    background-position: right;
+  }
 }
 @media only screen and (max-width: 360px) {
-  .slider-div {height: 60rem;}
-  .share-btns {height: 60rem;}
+  .slider-div {
+    height: 60rem;
+  }
+  .share-btns {
+    height: 60rem;
+  }
 }
 @media only screen and (max-width: 320px) {
   html {
@@ -981,26 +1019,30 @@ margin:0rem 4rem;
   }
 }
 @media only screen and (max-width: 308px) {
-  .profile{margin-top:2rem;}
+  .profile {
+    margin-top: 2rem;
+  }
 
-
-
-button.slick-arrow {left:27rem !important;}
-button.slick-prev.slick-arrow{left:22rem !important;}
+  button.slick-arrow {
+    left: 27rem !important;
+  }
+  button.slick-prev.slick-arrow {
+    left: 22rem !important;
+  }
 }
 @media only screen and (max-width: 384px) {
   .mbl-logo img:nth-child(1) {
     display: none;
-}
-.mbl-logo img:nth-child(2) {
-  display: block !important;
-}
+  }
+  .mbl-logo img:nth-child(2) {
+    display: block !important;
+  }
 }
 @media screen and (max-width: 576px) and (min-width: 480px) {
   #services-section {
     height: auto;
-}
-.back {
-  background-position: right;
-}
+  }
+  .back {
+    background-position: right;
+  }
 }
